@@ -25,6 +25,6 @@ passportUserSchema.methods.isValidPassword = async function (password) {
   return compare;
 };
 
-const passportUser = mongoose.model("passportUser", passportUserSchema);
+const passportUser = mongoose.model("user", passportUserSchema);
 
 module.exports = passportUser;
